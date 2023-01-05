@@ -4,17 +4,26 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "css:dev": "npx tailwindcss -i public/css/main.css -o public/css/output.css"
+    
   },
   "author": "ITQAN Labs",
   "license": "MIT",
   "dependencies": {
     "bcrypt": "^5.1.0",
+    "const": "^1.0.0",
+    "dotenv": "^16.0.3",
     "express": "^4.18.2",
+    "express-handlebars": "^6.0.6",
     "express-validator": "^6.14.2",
-    "jsonwebtoken": "^9.0.0"
+    "handlebars": "^4.7.7",
+    "jsonwebtoken": "^9.0.0",
+    "mysql": "^2.18.1",
+    "path": "^0.12.7"
   },
   "devDependencies": {
-    "nodemon": "^2.0.20"
+    "nodemon": "^2.0.20",
+    "tailwindcss": "^2.2.19"
   }
 }
